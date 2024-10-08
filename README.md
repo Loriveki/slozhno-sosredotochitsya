@@ -1,3 +1,3 @@
 # Проектная работа «Сложно сосредоточиться»
 
-git@github.com:Loriveki/slozhno-sosredotochitsya.git
+https://github.com/Loriveki/posmotri_v_okno.git
