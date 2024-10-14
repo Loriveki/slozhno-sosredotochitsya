@@ -394,19 +394,3 @@ main {
 
 
 
-.footer {
-  max-width: 100%;
-  grid-column: 1 / -1;
-  text-align: center;
-  padding: 320px 0;
-}
-
-.footer__text{
-  font-family: var(--font-family-base, 'IBM Plex Mono', monospace); 
-  font-style: normal;
-  font-weight: 700;
-  font-size: 157px;
-  line-height: 82.5%;
-  color: var(--color-primary, #DB00FF);
-  text-shadow: 2px 2px 0px var(--color-background-accent, #FF0070) ;
-}
