@@ -7,6 +7,7 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  background-color: var(--color-background);
 }
 
 .header {
@@ -214,7 +215,7 @@
   }
 
   .decorated-zone::after {
-    bottom: 10px;
+    bottom: 11px;
     left: 10px;
   }
 
@@ -666,10 +667,10 @@ main {
   grid-column: 1 / -1;
   text-align: center;
   padding: 320px 0;
-  min-height: 100vh; /* Блок будет занимать всю высоту экрана */
-  display: flex; /* Добавляем flex для выравнивания содержимого */
-  justify-content: center; /* Горизонтальное выравнивание по центру */
-  align-items: center; /* Вертикальное выравнивание по центру */
+  min-height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer__text {

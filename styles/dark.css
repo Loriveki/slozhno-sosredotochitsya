@@ -7,6 +7,13 @@
   --background-image: url("../images/cover-image-dark.png");
 }
 
-.theme-dark .header__rec {
-  display: block;
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: #000028;
+    --color-background-accent: #ff0070;
+    --color-text-secondary: #f1b2ce;
+    --color-primary: #db00ff;
+    --button-hover-outline: 1px solid rgba(255, 0, 112, 0.4);
+    --background-image: url("../images/cover-image-dark.png");
+  }
 }
