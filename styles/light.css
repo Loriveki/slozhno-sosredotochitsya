@@ -1,12 +1,60 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 .page.theme_light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --color-background: #353430;
+  --color-background-accent: #ff8dcb;
+  --color-text-secondary: #353430;
+  --color-primary: #ffc2e6;
+
+  --button-hover-outline: 1px solid rgba(50, 49, 45, 0.4);
+  --background-image: url("../images/cover-image-light.png");
+  background-color: #fff1f7;
+}
+
+.theme_light .header__rec {
+  display: none;
+}
+
+.theme_light .decorated-zone::before,
+.theme_light .decorated-zone::after {
+  border: 1px solid var(--color-text-secondary);
+}
+
+.theme_light .decorated-zone::before {
+  top: 20px;
+  right: 20px;
+  border-left: none;
+  border-bottom: none;
+}
+
+.theme_light .decorated-zone::after {
+  bottom: 19px;
+  left: 20px;
+  border-right: none;
+  border-top: none;
+}
+
+.theme_light .header__theme-menu-button {
+  color: var(--color-text-secondary);
+}
+
+.theme_light .header__theme-menu-button_active {
+  outline: 1px solid var(--color-text-secondary);
+  pointer-events: none;
+}
+
+.theme_light .section-title {
+  color: var(--color-text-secondary);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-background-accent: #ff0070;
+    --color-text-secondary: #f1b2ce;
+    --color-primary: #db00ff;
+    --color-background: #000028;
+    --button-hover-outline: 1px solid rgba(50, 49, 45, 0.4);
+    --background-image: url("../images/cover-image-light.png");
+  }
+  .header__rec {
+    display: none;
+  }
 }

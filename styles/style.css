@@ -3,8 +3,7 @@
   grid-template-rows: auto 1fr auto;
   grid-template-columns: 1fr;
   font-family: var(--font-family-base, "IBM Plex Mono", monospace);
-  background-color: var(--color-background, #000028);
-  /* background-image: url('../images/cover-image.png');   */
+  background-image: var(--background-image);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -98,15 +97,15 @@
   position: absolute;
   bottom: -2px;
   left: 0;
-  transform-origin: center;
 }
 
 .header__theme-menu-button:hover {
-  outline: 1px solid rgba(255, 0, 112, 0.4);
+  outline: var(--button-hover-outline);
 }
 
 .header__theme-menu-button_active {
   outline: 1px solid var(--color-background-accent);
+  pointer-events: none;
 }
 
 .header__rec {
@@ -158,7 +157,7 @@
   font-size: 18px;
   line-height: 23px;
   background-color: var(--color-background-accent);
-  color: var(--background-color);
+  color: var(--color-background);
   gap: 2px;
 }
 
@@ -494,21 +493,21 @@ main {
 
   .section--distractions {
     max-width: 100%;
-    display: grid; 
-    grid-template-columns: repeat(3, 1fr); 
-    row-gap: 20px; 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
   }
 
   .section-title--distractions {
-    grid-column: 1 / 2; 
+    grid-column: 1 / 2;
     padding: 5px 9px 0;
   }
 
   .section__content--distractions {
-    grid-column: 1 / -1; 
-    display: flex; 
-    flex-direction: column; 
-    gap: 23px; 
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
   }
 
   .section__item--distractions {
@@ -555,8 +554,8 @@ main {
   .section {
     max-width: 100%;
     display: flex;
-    flex-direction: column; 
-    gap: 20px; 
+    flex-direction: column;
+    gap: 20px;
   }
 
   /* Секция фокуса */
@@ -592,13 +591,13 @@ main {
 
   .section__content--distractions {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
   }
 
   .section__item--distractions {
     display: flex;
-    flex-direction: column; 
-    padding: 0 10px; 
+    flex-direction: column;
+    padding: 0 10px;
   }
 
   .section__subtitle--distractions {
@@ -625,7 +624,7 @@ main {
 
   .section__content--tips {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     padding: 0 10px;
   }
   .section__subtitle--tips {
@@ -643,17 +642,17 @@ main {
   /* Секция изображений */
 
   .section--images {
-    gap: 11px; 
+    gap: 11px;
   }
 
   .section__images {
     display: flex;
-    flex-wrap: wrap; 
-    gap: 10px; 
+    flex-wrap: wrap;
+    gap: 10px;
   }
 
   .section__image {
-    height: auto; 
+    height: auto;
     width: 100%;
   }
 
@@ -667,7 +666,12 @@ main {
   grid-column: 1 / -1;
   text-align: center;
   padding: 320px 0;
+  min-height: 100vh; /* Блок будет занимать всю высоту экрана */
+  display: flex; /* Добавляем flex для выравнивания содержимого */
+  justify-content: center; /* Горизонтальное выравнивание по центру */
+  align-items: center; /* Вертикальное выравнивание по центру */
 }
+
 .footer__text {
   font-family: var(--font-family-base, "IBM Plex Mono", monospace);
   font-style: normal;

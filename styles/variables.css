@@ -4,20 +4,14 @@
 */
 
 :root {
-   /* Основные цвета */
-   --color-primary: #DB00FF; /* Цвет для заголовков, текстов, кнопок с акцентом */
-   --color-background: #000028; /* Основной цвет фона страницы */
-   --color-background-accent: #FF0070; /* Фон для заголовков и текста */
-   
-   /* Цвета текста */
-   --color-text-secondary: #F1B2CE; /* Второстепенный цвет текста */
-
-   /* Шрифты */
-   --font-family-base: 'IBM Plex Mono', monospace; /* Основной шрифт */
-
-   /* Отступы */
-   --spacing-section-bottom: 80px; /* Нижний отступ между секциями */
-
-   /* Другие полезные переменные */
-   --border-radius: 8px; /* Радиус скругления для кнопок или блоков */
+  /* Основные цвета */
+  --color-primary: #db00ff; /* Цвет для заголовков, текстов, кнопок с акцентом */
+  --color-background: #000028; /* Основной цвет фона страницы */
+  --color-background-accent: #ff0070; /* Фон для заголовков и текста */
+  --color-text-secondary: #f1b2ce; /* Второстепенный цвет текста */
+  --button-hover-outline: 1px solid rgba(255, 0, 112, 0.4);
+  /* Шрифты */
+  --font-family-base: "IBM Plex Mono", monospace; /* Основной шрифт */
+  /* Фон */
+  --background-image: url("../images/cover-image-dark.png");
 }
