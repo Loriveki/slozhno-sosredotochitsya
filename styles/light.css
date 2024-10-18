@@ -1,11 +1,12 @@
 .page.theme_light {
-  --color-background: #353430;
+  --color-background: #fff1f7;
   --color-background-accent: #ff8dcb;
   --color-text-secondary: #353430;
   --color-primary: #ffc2e6;
   --button-hover-outline: 1px solid rgba(50, 49, 45, 0.4);
   --background-image: url("../images/cover-image-light.png");
-  background-color: #fff1f7;
+  --primary-heading-color: #353430;
+  --secondary-heading-color: #353430;
 }
 
 .theme_light .header__rec {
@@ -16,42 +17,16 @@
   display: none;
 }
 
-.theme_light .decorated-zone::before,
-.theme_light .decorated-zone::after {
-  border: 1px solid var(--color-text-secondary);
-}
-
-.theme_light .decorated-zone::before {
-  border-left: none;
-  border-bottom: none;
-}
-
-.theme_light .decorated-zone::after {
-  border-right: none;
-  border-top: none;
-}
-
-.theme_light .header__theme-menu-button {
-  color: var(--color-text-secondary);
-}
-
-.theme_light .header__theme-menu-button_active {
-  outline: 1px solid var(--color-text-secondary);
-  pointer-events: none;
-}
-
-.theme_light .section-title {
-  color: var(--color-text-secondary);
-}
-
 @media (prefers-color-scheme: light) {
   :root {
-    --color-background: #353430;
+    --color-background: #fff1f7;
     --color-background-accent: #ff8dcb;
     --color-text-secondary: #353430;
     --color-primary: #ffc2e6;
     --button-hover-outline: 1px solid rgba(50, 49, 45, 0.4);
     --background-image: url("../images/cover-image-light.png");
+    --primary-heading-color: #353430;
+    --secondary-heading-color: #353430;
   }
 
   .theme_auto .header__rec {
@@ -60,33 +35,5 @@
 
   .theme_auto .header__rec::after {
     display: none;
-  }
-
-  .theme_auto .decorated-zone::before,
-  .theme_auto .decorated-zone::after {
-    border: 1px solid var(--color-text-secondary);
-  }
-
-  .theme_auto .decorated-zone::before {
-    border-left: none;
-    border-bottom: none;
-  }
-
-  .theme_auto .decorated-zone::after {
-    border-right: none;
-    border-top: none;
-  }
-
-  .theme_auto .header__theme-menu-button {
-    color: var(--color-text-secondary);
-  }
-
-  .theme_auto .header__theme-menu-button_active {
-    outline: 1px solid var(--color-text-secondary);
-    pointer-events: none;
-  }
-
-  .theme_auto .section-title {
-    color: var(--color-text-secondary);
   }
 }
