@@ -45,12 +45,12 @@ git clone https://github.com/Loriveki/slozhno-sosredotochitsya.git
 Ширина экрана 375px:  
   
 ![375 (2)](https://github.com/user-attachments/assets/0495b53d-a259-48f9-ba33-7ba7f2e84010)
-![375](https://github.com/user-attachments/assets/804205e9-3215-4574-8e2b-9939da63c444)
-Ширина экрана 768px:  
-
+![375](https://github.com/user-attachments/assets/804205e9-3215-4574-8e2b-9939da63c444)  
+Ширина экрана 768px: 
 
 ![768 (2)](https://github.com/user-attachments/assets/34c1d8b2-8f8f-4e4c-ba51-4fdbba943d78)
-![768](https://github.com/user-attachments/assets/672d679f-1c82-4ccb-afbd-a09c5c15fbb5)
+![768](https://github.com/user-attachments/assets/672d679f-1c82-4ccb-afbd-a09c5c15fbb5)  
+
 Ширина экрана 1024px:  
 
 ![1024 (2)](https://github.com/user-attachments/assets/9908d7b9-20f9-4cc4-a132-004a4a284cee)
